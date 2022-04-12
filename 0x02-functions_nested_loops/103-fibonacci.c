@@ -8,15 +8,13 @@
  */
 int main(void)
 {
-	long pri = 1, sec = 2, sum, total_sum;
-	int val;
+	long pri = 1, sec = 2, sum=0, total_sum=0;
 
 	sum = pri + sec;
 	while (sum <= 4000000)
 	{
-		val = sum % 2;
 		sum = pri + sec;
-		if (val == 0)
+		if ((sum % 2) == 0)
 		{
 			total_sum += sum;
 		}
