@@ -10,14 +10,14 @@ int main(void)
 {
 	unsigned long pri = 1, sec = 2, sum = 0, total_sum = 0;
 
-	sum = pri + sec;
-	while (sum < 4000000)
+	sum = sec;
+	while (sum <= 4000000)
 	{
-		sum = pri + sec;
 		if ((sum % 2) == 0)
 		{
 			total_sum += sum;
 		}
+		sum = pri + sec;
 		pri = sec;
 		sec = sum;
 	}
