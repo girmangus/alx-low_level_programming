@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long pri = 1, sec = 2, sum =0;
+	long pri = 1, sec = 2, sum = 0;
 	int limit = 3;
 
 	printf("1, 2");
