@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	long pri = 0, sec = 1, sum, total_sum;
+	long pri = 1, sec = 2, sum, total_sum;
 	int val;
 
 	sum = pri + sec;
