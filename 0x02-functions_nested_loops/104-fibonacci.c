@@ -14,7 +14,7 @@ int main(void)
 	while (limit <= 98)
 	{
 		sum = pri + sec;
-		printf(", %lu", sum);
+		printf(", %lld", sum);
 		pri = sec;
 		sec = sum;
 		limit++;
