@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-	long double pri = 1, sec = 2, sum = 0;
+	unsigned integer pri = 1, sec = 2, sum = 0;
 	int limit = 3;
 
 	printf("1, 2");
 	while (limit <= 98)
 	{
 		sum = pri + sec;
-		printf(", %Lf", sum);
+		printf(", %i", sum);
 		pri = sec;
 		sec = sum;
 		limit++;
