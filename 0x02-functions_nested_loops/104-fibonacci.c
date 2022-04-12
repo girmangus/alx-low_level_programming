@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long long int pri = 1, sec = 2, sum = 0;
+	unsigned long long pri = 1, sec = 2, sum = 0;
 	int limit = 3;
 
 	printf("1, 2");
