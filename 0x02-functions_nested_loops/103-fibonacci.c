@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	long long int pri = 1, sec = 2, sum = 0, total_sum = 0;
+	long unsigned int pri = 1, sec = 2, sum = 0, total_sum = 0;
 
 	sum = sec;
 	while (sum <= 4000000)
