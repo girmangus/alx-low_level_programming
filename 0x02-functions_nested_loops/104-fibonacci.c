@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned integer pri = 1, sec = 2, sum = 0;
+	unsigned int  pri = 1, sec = 2, sum = 0;
 	int limit = 3;
 
 	printf("1, 2");
