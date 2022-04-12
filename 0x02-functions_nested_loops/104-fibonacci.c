@@ -1,0 +1,22 @@
+#include <stdio.h>
+/**
+ * main -   prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line.
+ * @void: no argument
+ * Return: 0
+ */
+int main(void)
+{
+	long pri = 1, sec = 2, limit = 0;
+
+	printf("1, 2");
+	while (limit < = 98)
+	{
+		sum = pri + sec;
+		printf(", %lu", sum);
+		pri = sec;
+		sec = sum;
+		limit++;
+	}
+	printf("\n");
+	return (0);
+}
