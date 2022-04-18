@@ -16,6 +16,7 @@ int _atoi(char *s)
     {
         if (s[i] == '-')
             minus *= -1;
+
         if (s[i] >= '0' && s[i] <= '9')
         {
             result *= 10;
