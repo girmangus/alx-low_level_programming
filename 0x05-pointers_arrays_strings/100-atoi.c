@@ -24,7 +24,7 @@ int _atoi(char *s)
             boolean = 1;
         }
         else if (boolean == 1)
-        break;
+           break;
         i++;
     }
     result *= minus;
