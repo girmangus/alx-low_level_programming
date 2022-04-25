@@ -15,11 +15,10 @@ char *_strstr(char *haystack, char *needle)
 		{
 			break;
 		}
-}
-if (needle[con2] == '\0')
-{
-	return (haystack + con1);
-}
-}
-return (NULL);
+
+	if (needle[con2] == '\0')
+	{
+		return (haystack + con1);
+	}
+	return (NULL);
 }
