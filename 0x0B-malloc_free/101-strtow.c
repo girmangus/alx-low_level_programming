@@ -25,6 +25,7 @@ int number(char *str)
 	}
 	return (num);
 }
+
 /**
  * free_everything - frees the memory
  * @string: pointer values being passed for freeing
