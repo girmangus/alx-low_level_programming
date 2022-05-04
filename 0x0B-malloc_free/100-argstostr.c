@@ -1,4 +1,4 @@
-#include "main.h.h"
+#include "main.h"
 #include <stdlib.h>
 /**
  * argstostr - Concatenate arguments
