@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	int con1 = 0, con2 = 0, flag, lon = 0;
 	va_list arg;
 
-	cf_t print[] = { {"c", pc}, {"s", ps}, {NULL, NULL} };
+	cf_t print[] = { {"c", pc}, {"s", ps}, {"d", pd}, {"i", pi}, {NULL, NULL} };
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
