@@ -5,19 +5,16 @@
  * @h: element of the structure
  * Return: number of nodes
  */
-
 size_t print_list(const list_t *h)
 {
-	unsigned int count = 0;
+	const list_t *tmp;
+	unsigned int i;
 
-	while (h != NULL)
+	tmp = h;
+	for (i = 0; tmp; i++)
 	{
-		if (h->str == NULL)
-			printf("[0] (nil)\n");
-		else
-			printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
-		count++;
+		printf("[%u] %s\n", tmp->len, tmp->str);
+		tmp = tmp->next;
 	}
-	return (count);
+	return (i);
 }
