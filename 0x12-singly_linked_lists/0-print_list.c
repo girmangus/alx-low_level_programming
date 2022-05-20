@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 /**
  * print_list -  prints all the elements of a list_t list
@@ -7,20 +8,16 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t con = 0;
-	const list_t *move = h;
+	unsigned int count = 0;
 
-	if (h == NULL)
-		return (0);
-
-	while (move != NULL)
+	while (h != NULL)
 	{
-		if (move->str)
-			printf("[%d] %s\n", move->len, move->str);
-		else
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
-		move = move->next;
-		con++;
+		else
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
+		count++;
 	}
-	return (con);
+	return (count);
 }

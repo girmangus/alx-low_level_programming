@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include "lists.h"
+
 /**
  * firstfunc - prints before the main function is executed.
  *
  * Return: Always 0.
  */
-void firstfunc(void) __attribute__ ((constructor));
+void firstfunc(void) __attribute__((constructor));
 
 void firstfunc(void)
 {
