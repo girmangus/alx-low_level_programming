@@ -5,20 +5,17 @@
  * @m: takes in the 2nd integer to compare
  * Return: number of bits
  */
+
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int con, index;
-	unsigned long int num;
+	unsigned long int xorval = n ^ m;
+	unsigned int count = 0;
 
-	index = (sizeof(unsigned long int) * 8) - 1;
-	num = n ^ m;
-
-	for (con = 0; index >= 0; index--)
+	while (xorval)
 	{
-		if (((num >> index) &1) == 1)
-		{
-			con += 1;
-		}
+		if (xorval & 1ul)
+			count++;
+		xorval = xorval >> 1;
 	}
-	return (con);
+	return (count);
 }
