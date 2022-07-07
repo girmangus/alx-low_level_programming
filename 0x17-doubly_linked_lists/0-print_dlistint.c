@@ -3,12 +3,17 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t i;
+	size_t con = 0;
 
-	for (i = 0; h != NULL; i++)
+	if (h == NULL)
+		return (0);
+
+	while (h)
 	{
 		printf("%d\n", h->n);
+		con++;
 		h = h->next;
 	}
-	return (i);
+
+	return (con);
 }
